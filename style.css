@@ -1,0 +1,272 @@
+/*==== Google font link ==== */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+  /*==== website colors, fonts ====*/
+:root{
+    --red-color: #FF0000;
+    --black-color: #070211;
+    --less-black-color: #070211;
+    --white-color: #FFFFFF;
+    --background-color: #FFFFFF;
+    --footer-color: #070211;
+    --font-family-merriweather: 'Merriweather', serif;
+    --font-family-inter: 'Inter', sans-serif;
+}
+
+
+/*==== General CSS settings*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, span{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100;
+    height: auto;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+/*==== Hero Section css ====*/
+.hero_section_container{
+  position: relative;
+}
+
+.hero_image img{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.hero_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+
+.hero_sub_heading, 
+.hero_main_heading{
+    color: var(--white-color);
+    font-family: var(--font-family-merriweather);
+    z-index: 1;
+}
+
+.hero_sub_heading{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.hero_main_heading{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px; 
+}
+
+
+/*==== Discount Section css ====*/
+.discount_section_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.discount_main_heading,
+.discount_small_text,
+.discount_sub_heading{
+    font-family: var(--font-family-inter);
+    text-align: center;
+    line-height: normal;
+    font-style: normal;
+}
+
+.discount_main_heading{
+    color: var(--red-color);
+    font-size: 75px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.discount_small_text{
+    color: var(--red-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.discount_sub_heading{
+    color: var(--black-color);
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.discount_section_inner img{
+    width: 600px;
+    margin-top: 30px;
+}
+
+
+
+/*==== Holidays sale Section css ====*/
+.holidays_sale_section_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.holidays_sale_section_inner_txt{
+    padding: 0 150px;
+}
+
+.holidays_sale_main_heading,
+.holidays_sale_small_text,
+.holidays_sale_sub_heading{
+    text-align: center;
+    line-height: normal;
+    font-style: normal;
+}
+
+.holidays_sale_main_heading{
+    font-family: var(--font-family-merriweather);
+    color: var(--black-color);
+    font-size: 50px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.holidays_sale_main_heading .color_txt{
+    color: var(--red-color);
+}
+
+.holidays_sale_small_text{
+    font-family: var(--font-family-inter);
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.holidays_sale_sub_heading{
+    font-family: var(--font-family-inter);
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.holidays_sale_section_inner img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
+/* ==== Responsive CSS ==== */
+@media screen and (max-width: 992px){
+/* ==== Hero Section CSS ==== */
+    .hero_sub_heading{
+        font-size: 20px;
+    }
+
+    .hero_main_heading{
+        font-size: 50px;
+        line-height: 60px; 
+    }
+
+/* ==== Discount Section CSS ==== */
+    .discount_main_heading{
+        font-size: 60px;
+    }
+    
+    .discount_small_text{
+        font-size: 18px;
+    }
+    
+    .discount_sub_heading{
+        font-size: 30px;
+    }
+
+/*==== Holidays sale Section CSS ====*/
+    .holidays_sale_main_heading{
+        font-size: 45px;
+        margin: 10px 0;
+    }
+    
+    .holidays_sale_sub_heading{
+        font-size: 18px;
+    }
+
+    .holidays_sale_section_inner_txt{
+        padding: 0 80px;
+    }
+}
+
+@media screen and (max-width: 768px){
+/* ==== Hero Section CSS ==== */
+    .hero_sub_heading{
+        font-size: 18px;
+    }
+
+    .hero_main_heading{
+        font-size: 25px;
+        line-height: 30px; 
+    }
+
+/* ==== Discount Section CSS ==== */
+    .discount_main_heading{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .discount_small_text{
+        font-size: 16px;
+    }
+    
+    .discount_sub_heading{
+        font-size: 25px;
+    }
+
+    .discount_section_inner img{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    /*==== Holidays sale Section CSS ====*/
+    .holidays_sale_main_heading{
+        font-size: 40px;
+    }
+    
+    .holidays_sale_sub_heading{
+        font-size: 18px;
+    }
+
+    .holidays_sale_section_inner_txt{
+        padding: 0 0px;
+    }
+}
