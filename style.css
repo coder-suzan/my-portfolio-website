@@ -1,656 +1,656 @@
 /*==== Google font link ==== */
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 
-  /*==== website colors, fonts ====*/
+/*==== website colors, fonts ====*/
 :root{
-    --red-color: #FF0000;
-    --black-color: #070211;
-    --less-black-color: #070211;
-    --white-color: #FFFFFF;
-    --background-color: #FFFFFF;
-    --footer-color: #070211;
-    --font-family-merriweather: 'Merriweather', serif;
-    --font-family-inter: 'Inter', sans-serif;
+  --red-color: #FF0000;
+  --black-color: #070211;
+  --less-black-color: #070211;
+  --white-color: #FFFFFF;
+  --background-color: #FFFFFF;
+  --footer-color: #070211;
+  --font-family-merriweather: 'Merriweather', serif;
+  --font-family-inter: 'Inter', sans-serif;
 }
 
 
 /*==== General CSS settings*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    font-family: var(--font-family-inter);
+  font-family: var(--font-family-inter);
 }
 
 h1, h2, h3, h4, h5, h6, p, span{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .btn{
-    padding: 10px 15px;
-    border-radius: 5px;
-    color: var(--white-color);
-    border: none;
-    text-decoration: none;
-    margin-top: 10px;
-    font-family: var(--font-family-inter);
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: var(--white-color);
+  border: none;
+  text-decoration: none;
+  margin-top: 10px;
+  font-family: var(--font-family-inter);
 }
 
 input{
-    border: none;
-    outline: none;
-    padding: 12px 8px;
-    font-family: var(--font-family-inter);
+  border: none;
+  outline: none;
+  padding: 12px 8px;
+  font-family: var(--font-family-inter);
 }
 
 
 img{
-    width: 100;
-    height: auto;
+  width: 100;
+  height: auto;
 }
 
 .container{
-    width: 80%;
-    margin: 50px auto;
+  width: 80%;
+  margin: 50px auto;
 }
 
 
 /*==== Hero Section css ====*/
 .hero_section_container{
-  position: relative;
+position: relative;
 }
 
 .hero_image img{
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
 }
 
 .hero_content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-}
-
-
-.hero_sub_heading, 
-.hero_main_heading{
-    color: var(--white-color);
-    font-family: var(--font-family-merriweather);
-    z-index: 1;
-}
-
-.hero_sub_heading{
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 15px;
-}
-
-.hero_main_heading{
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 70px; 
-}
-
-
-/*==== Discount Section css ====*/
-.discount_section_inner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.discount_main_heading,
-.discount_small_text,
-.discount_sub_heading{
-    font-family: var(--font-family-inter);
-    text-align: center;
-    line-height: normal;
-    font-style: normal;
-}
-
-.discount_main_heading{
-    color: var(--red-color);
-    font-size: 75px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.discount_small_text{
-    color: var(--red-color);
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.discount_sub_heading{
-    color: var(--black-color);
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 5px;
-}
-
-.discount_section_inner img{
-    width: 600px;
-    margin-top: 30px;
-}
-
-
-/* ==== Midnight party Section CSS ====*/
-.midnight_party_inner{
-   background-image: url('./resources/boy-and-girl-celibrate.png');
-   background-size: cover;
-   background-repeat: no-repeat;
-   border-radius: 16px;
-   padding: 40px 50px;
-   display: flex;
-   flex-direction: row;
-   gap: 30px;
-   justify-content: space-between;
-   align-items: center;
-   position: relative;
-}
-
-.midnight_party_inner::after{
   position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
   width: 100%;
   height: 100%;
   border-radius: 16px;
 }
 
-.midnight_content{
-    margin-right: 200px;
-    z-index: 10;
+
+.hero_sub_heading, 
+.hero_main_heading{
+  color: var(--white-color);
+  font-family: var(--font-family-merriweather);
+  z-index: 1;
 }
 
-.midnight_heading, .midnight_normal_txt{
-  color: var(--white-color);
+.hero_sub_heading{
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.hero_main_heading{
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 70px; 
+}
+
+
+/*==== Discount Section css ====*/
+.discount_section_inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount_main_heading,
+.discount_small_text,
+.discount_sub_heading{
+  font-family: var(--font-family-inter);
+  text-align: center;
+  line-height: normal;
   font-style: normal;
 }
 
+.discount_main_heading{
+  color: var(--red-color);
+  font-size: 75px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.discount_small_text{
+  color: var(--red-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.discount_sub_heading{
+  color: var(--black-color);
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.discount_section_inner img{
+  width: 600px;
+  margin-top: 30px;
+}
+
+
+/* ==== Midnight party Section CSS ====*/
+.midnight_party_inner{
+ background-image: url('./resources/boy-and-girl-celibrate.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+ border-radius: 16px;
+ padding: 40px 50px;
+ display: flex;
+ flex-direction: row;
+ gap: 30px;
+ justify-content: space-between;
+ align-items: center;
+ position: relative;
+}
+
+.midnight_party_inner::after{
+position: absolute;
+content: "";
+left: 0;
+top: 0;
+background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+width: 100%;
+height: 100%;
+border-radius: 16px;
+}
+
+.midnight_content{
+  margin-right: 200px;
+  z-index: 10;
+}
+
+.midnight_heading, .midnight_normal_txt{
+color: var(--white-color);
+font-style: normal;
+}
+
 .midnight_heading{
- font-family: var(--font-family-merriweather);
- font-size: 50px;
- font-weight: 900;
- line-height: 50px;
- margin-bottom: 20px;
+font-family: var(--font-family-merriweather);
+font-size: 50px;
+font-weight: 900;
+line-height: 50px;
+margin-bottom: 20px;
 }
 
 .midnight_normal_txt{
-    font-family: var(--font-family-inter);
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 25px;
-    margin-bottom: 20px;
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  margin-bottom: 20px;
 }
 
 .midnight_btn{
-    background-color: var(--red-color);
-    font-family: var(--font-family-inter);
+  background-color: var(--red-color);
+  font-family: var(--font-family-inter);
 }
 
 .midnight_img{
-    z-index: 5;
+  z-index: 5;
 }
 
 .midnight_img img{
-    max-width: 200px;
-    height: auto;
+  max-width: 200px;
+  height: auto;
 }
 
 
 /*==== Join us section  css ====*/
 .join_us_inner{
-    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
-    padding: 50px 30px;
-    text-align: center;
-    border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+  padding: 50px 30px;
+  text-align: center;
+  border-radius: 16px;
 }
 
 .join_us_content{
-   margin-bottom: 40px;
+ margin-bottom: 40px;
 }
 
 .join_us_heading{
-    font-family: var(--font-family-inter);
-    font-size: 22px;
-    line-height: 30px;
-    font-weight: 600;
+  font-family: var(--font-family-inter);
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
 }
 
 .join_us_heading .color_txt{
-    color: var(--red-color);
+  color: var(--red-color);
 }
 
 .join_us_btn{
-    background-color: var(--red-color);
-    font-family: var(--font-family-inter);
+  background-color: var(--red-color);
+  font-family: var(--font-family-inter);
 }
 
 /*==== celebrate 2024 section  css ====*/
 .celebrate_2024_inner{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 40px;
+justify-content: center;
+align-items: center;
 }
 
 .celebrate_subheading{
-    font-size: 18px;
-    color: var(--red-color);
-    font-family: var(--font-family-inter);
+  font-size: 18px;
+  color: var(--red-color);
+  font-family: var(--font-family-inter);
 }
 
 .celebrate_main_heading{
-    font-size: 30px;
-    font-family: var(--font-family-merriweather);
-    margin: 8px 0;
+  font-size: 30px;
+  font-family: var(--font-family-merriweather);
+  margin: 8px 0;
 }
 
 .celebrate_normal_txt{
-    font-family: var(--font-family-inter);
-    font-size: 16px;
-    line-height: 22px;
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .celebrate_middle img{
-    max-width: 300px;
-    border: 6px solid var(--red-color);
-    border-radius: 100%;
-    padding: 15px;
+  max-width: 300px;
+  border: 6px solid var(--red-color);
+  border-radius: 100%;
+  padding: 15px;
 }
 
 .celebrate_right .celebrate_main_heading{
-    color: var(--red-color);
-    font-family: var(--font-family-inter);
+  color: var(--red-color);
+  font-family: var(--font-family-inter);
 }
 
 .celebrate_right  .celebrate_normal_txt{
-    font-family: var(--font-family-inter);
+  font-family: var(--font-family-inter);
 }
 
 .celebrate_right img{
-    max-width: 100px;
-    margin-top: 10px;
+  max-width: 100px;
+  margin-top: 10px;
 }
 
 /*==== Holidays sale Section css ====*/
 .holidays_sale_section_inner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .holidays_sale_section_inner_txt{
-    padding: 0 150px;
+  padding: 0 150px;
 }
 
 .holidays_sale_main_heading,
 .holidays_sale_small_text,
 .holidays_sale_sub_heading{
-    text-align: center;
-    line-height: normal;
-    font-style: normal;
+  text-align: center;
+  line-height: normal;
+  font-style: normal;
 }
 
 .holidays_sale_main_heading{
-    font-family: var(--font-family-merriweather);
-    color: var(--black-color);
-    font-size: 50px;
-    font-weight: 700;
-    margin: 15px 0;
+  font-family: var(--font-family-merriweather);
+  color: var(--black-color);
+  font-size: 50px;
+  font-weight: 700;
+  margin: 15px 0;
 }
 
 .holidays_sale_main_heading .color_txt{
-    color: var(--red-color);
+  color: var(--red-color);
 }
 
 .holidays_sale_small_text{
-    font-family: var(--font-family-inter);
-    color: var(--black-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+  font-family: var(--font-family-inter);
+  color: var(--black-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .holidays_sale_sub_heading{
-    font-family: var(--font-family-inter);
-    color: var(--black-color);
-    font-size: 20px;
-    font-weight: 500;
+  font-family: var(--font-family-inter);
+  color: var(--black-color);
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .holidays_sale_section_inner img{
-    width: 100%;
-    margin-top: 30px;
+  width: 100%;
+  margin-top: 30px;
 }
 
 
 /*==== celebrate 2024 section  css ====*/
-  .portfolio_inner_content{
-    width: 60%;
-  }
-  
-  .portfolio_subheading{
-      font-size: 18px;
-      color: var(--red-color);
-      font-family: var(--font-family-inter);
-  }
-  
-  .portfolio_main_heading{
-      font-size: 30px;
-      font-family: var(--font-family-merriweather);
-      margin: 8px 0;
-  }
-  
-  .portfolio_normal_txt{
-      font-family: var(--font-family-inter);
-      font-size: 16px;
-      line-height: 22px;
-  }
+.portfolio_inner_content{
+  width: 60%;
+}
 
-  .portfolio_items{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
-  }
+.portfolio_subheading{
+    font-size: 18px;
+    color: var(--red-color);
+    font-family: var(--font-family-inter);
+}
 
-  .portfolio_items div{
-    overflow: hidden;
-    border-radius: 16px;
-  }
+.portfolio_main_heading{
+    font-size: 30px;
+    font-family: var(--font-family-merriweather);
+    margin: 8px 0;
+}
 
-  .portfolio_items div:hover{
-    border: 2px solid var(--red-color);
-    transition: all 0.5s border;
-  }
+.portfolio_normal_txt{
+    font-family: var(--font-family-inter);
+    font-size: 16px;
+    line-height: 22px;
+}
 
-  .portfolio_items img{
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.portfolio_items{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.portfolio_items div{
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.portfolio_items div:hover{
+  border: 2px solid var(--red-color);
+  transition: all 0.5s border;
+}
+
+.portfolio_items img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 
-  /*==== newsletter section  css ====*/
-  .newsletter__inner{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 30px;
-    border-radius: 16px;
-    background-color: rgba(255, 0, 0, 0.05);
-  }
+/*==== newsletter section  css ====*/
+.newsletter__inner{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px;
+  border-radius: 16px;
+  background-color: rgba(255, 0, 0, 0.05);
+}
 
-  .newsletter__inner__content{
-    width: 60%;
-    text-align: center;
-  }
+.newsletter__inner__content{
+  width: 60%;
+  text-align: center;
+}
 
-  .newsletter__inner img{
-    width: 60px;
-  }
-  
-  .newsletter_heading{
-      font-size: 30px;
-      font-family: var(--font-family-merriweather);
-      margin: 8px 0;
-  }
-  
-  .newsletter_normal_text{
-      font-family: var(--font-family-inter);
-      font-size: 16px;
-      line-height: 22px;
-  }
+.newsletter__inner img{
+  width: 60px;
+}
 
-  .newsletter_fields {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+.newsletter_heading{
+    font-size: 30px;
+    font-family: var(--font-family-merriweather);
+    margin: 8px 0;
+}
 
-  .email_field{
-    width: 250px;
-  }
+.newsletter_normal_text{
+    font-family: var(--font-family-inter);
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.newsletter_fields {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.email_field{
+  width: 250px;
+}
 
 .submit_btn{
-    background-color: var(--red-color);
-    color: var(--white-color);
-    border-radius: 0 16px 16px 0;
-    padding: 12px 15px;
+  background-color: var(--red-color);
+  color: var(--white-color);
+  border-radius: 0 16px 16px 0;
+  padding: 12px 15px;
 }
 
 /* footer part css */
 footer{
-    background-color: var(--black-color);
-    padding: 10px 0;
+  background-color: var(--black-color);
+  padding: 10px 0;
 }
 
 footer .container{
-    margin: 40px auto;
+  margin: 40px auto;
 }
 
 footer a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer_top{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
 }
 
 .phone_and_website{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .phone_and_website img{
-   width: 20px;
+ width: 20px;
 }
 
 .footer_normal_txt{
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 .phone, .website{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer__middle{
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
 }
 
 .footer_middle_inner {
-   display: flex;
-   gap: 10px;
+ display: flex;
+ gap: 10px;
 }
 
 .footer_middle_inner img{
-    width: 35px;
+  width: 35px;
 }
 
 .footer__bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    margin: 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0 0;
 }
 
 .unsubscribe .btn{
-    background-color: var(--white-color);
-    color: var(--black-color);
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 /* ==== Responsive CSS ==== */
 @media screen and (max-width: 1168px){
 /*==== Midnight party Section CSS ====*/
 .midnight_content{
-    margin-right: 50px;
-  }
+  margin-right: 50px;
+}
 }
 
 @media screen and (max-width: 992px){
 /* ==== Hero Section CSS ==== */
-    .hero_sub_heading{
-        font-size: 20px;
-    }
+  .hero_sub_heading{
+      font-size: 20px;
+  }
 
-    .hero_main_heading{
-        font-size: 50px;
-        line-height: 60px; 
-    }
+  .hero_main_heading{
+      font-size: 50px;
+      line-height: 60px; 
+  }
 
 /* ==== Discount Section CSS ==== */
-    .discount_main_heading{
-        font-size: 60px;
-    }
-    
-    .discount_small_text{
-        font-size: 18px;
-    }
-    
-    .discount_sub_heading{
-        font-size: 30px;
-    }
+  .discount_main_heading{
+      font-size: 60px;
+  }
+  
+  .discount_small_text{
+      font-size: 18px;
+  }
+  
+  .discount_sub_heading{
+      font-size: 30px;
+  }
 
 /*==== Midnight party Section CSS ====*/
 .midnight_content{
-    margin-right: 0;
+  margin-right: 0;
 }
 
 /*==== celebrate 2024 section  css ====*/
 .celebrate_2024_inner{
-    grid-template-columns: 1fr;
-    gap: 30px;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .celebrate_left, .celebrate_middle, .celebrate_right{
-    text-align: center;
+  text-align: center;
 }
 
 
 /*==== Holidays sale Section CSS ====*/
-    .holidays_sale_main_heading{
-        font-size: 45px;
-        margin: 10px 0;
-    }
-    
-    .holidays_sale_sub_heading{
-        font-size: 18px;
-    }
+  .holidays_sale_main_heading{
+      font-size: 45px;
+      margin: 10px 0;
+  }
+  
+  .holidays_sale_sub_heading{
+      font-size: 18px;
+  }
 
-    .holidays_sale_section_inner_txt{
-        padding: 0 80px;
-    }
+  .holidays_sale_section_inner_txt{
+      padding: 0 80px;
+  }
 }
 
 @media screen and (max-width: 768px){
 /* ==== Hero Section CSS ==== */
-    .hero_sub_heading{
-        font-size: 18px;
-    }
+  .hero_sub_heading{
+      font-size: 18px;
+  }
 
-    .hero_main_heading{
-        font-size: 25px;
-        line-height: 30px; 
-    }
+  .hero_main_heading{
+      font-size: 25px;
+      line-height: 30px; 
+  }
 
 /* ==== Discount Section CSS ==== */
-    .discount_main_heading{
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-    
-    .discount_small_text{
-        font-size: 16px;
-    }
-    
-    .discount_sub_heading{
-        font-size: 25px;
-    }
+  .discount_main_heading{
+      font-size: 40px;
+      margin-bottom: 10px;
+  }
+  
+  .discount_small_text{
+      font-size: 16px;
+  }
+  
+  .discount_sub_heading{
+      font-size: 25px;
+  }
 
-    .discount_section_inner img{
-        width: 90%;
-        margin-top: 20px;
-    }
+  .discount_section_inner img{
+      width: 90%;
+      margin-top: 20px;
+  }
 
 
-    /*==== Midnight party Section CSS ====*/
-    .midnight_party_inner{
-      flex-direction: column;
-      gap: 40px;
-      padding: 50px 30px;
-    }
+  /*==== Midnight party Section CSS ====*/
+  .midnight_party_inner{
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 30px;
+  }
 
-    .midnight_content{
-        text-align: center;
-    }
+  .midnight_content{
+      text-align: center;
+  }
 
-    .midnight_heading{
-        font-size: 30px;
-        line-height: 35px;
-        margin-bottom: 10px;
-    }
+  .midnight_heading{
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 10px;
+  }
 
-    /*==== Holidays sale Section CSS ====*/
-    .holidays_sale_main_heading{
-        font-size: 40px;
-    }
-    
-    .holidays_sale_sub_heading{
-        font-size: 18px;
-    }
+  /*==== Holidays sale Section CSS ====*/
+  .holidays_sale_main_heading{
+      font-size: 40px;
+  }
+  
+  .holidays_sale_sub_heading{
+      font-size: 18px;
+  }
 
-    .holidays_sale_section_inner_txt{
-        padding: 0 0px;
-    }
+  .holidays_sale_section_inner_txt{
+      padding: 0 0px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    /* ==== footer part css ==== */
-    .footer_top, .footer__bottom{
-        display: flex;
-        flex-direction: column;
-    }    
+  /* ==== footer part css ==== */
+  .footer_top, .footer__bottom{
+      display: flex;
+      flex-direction: column;
+  }    
 }
